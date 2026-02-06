@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>漢方診断｜疲れやすい</title>
+  <style>
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+      background-color: #e8f7ef; /* パステル緑 */
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 40px;
+      font-size: 16px;
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    a.symptom-button {
+      display: block;
+      padding: 20px;
+      background-color: #5cbf9b; /* 緑のボタン */
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 12px;
+      transition: background-color 0.2s, transform 0.2s;
+    }
+
+    a.symptom-button:hover {
+      background-color: #4aa88a;
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>疲れやすい</h1>
+  <p>さらに症状を追加してください</p>
+
+  <div class="button-container">
+    <a class="symptom-button" href="result_morning.html">朝からだるい</a>
+    <a class="symptom-button" href="result_evening.html">夕方に疲れる</a>
+    <a class="symptom-button" href="result_norecover.html">休んでも回復しない</a>
+    <a class="symptom-button" href="result_focus.html">集中力が続かない</a>
+  </div>
+
+</body>
+</html>

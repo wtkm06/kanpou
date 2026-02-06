@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>漢方診断｜診断結果</title>
+
+<style>
+body {
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  background-color: #f0f0f0;
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+li {
+  background: white;
+  margin-bottom: 12px;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* ▼ 画像がにゅっと出るエリア */
+.image-box {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  margin-top: 10px;
+}
+
+.image-box.open {
+  max-height: 300px;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+a.back-button {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #333333;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 999px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+a.back-button:hover {
+  background-color: #111111;
+  transform: translateY(-2px);
+}
+</style>
+</head>
+
+<body>
+
+<h1>診断結果</h1>
+<p>あなたの体質に合いやすい漢方薬の例です</p>
+
+<ul>
+
+<li onclick="toggleImage(this)">
+86 当帰飲子
+<div class="image-box">
+  <img src="86.jpg" alt="当帰飲子">
+</div>
+</li>
+
+<li onclick="toggleImage(this)">
+71 四物湯
+<div class="image-box">
+  <img src="71.jpg" alt="四物湯">
+</div>
+</li>
+
+<li onclick="toggleImage(this)">
+77 芎帰膠艾湯
+<div class="image-box">
+  <img src="77.jpg" alt="芎帰膠艾湯">
+</div>
+</li>
+
+</ul>
+
+<a class="back-button" href="漢方分岐１.html">最初のページに戻る</a>
+
+<script>
+function toggleImage(element) {
+  const box = element.querySelector(".image-box");
+  box.classList.toggle("open");
+}
+</script>
+
+</body>
+</html>

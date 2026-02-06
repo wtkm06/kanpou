@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>漢方診断｜メンタルの不調</title>
+  <style>
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+      background-color: #e6f7f2; /* パステルエメラルド */
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 40px;
+      font-size: 16px;
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    a.symptom-button {
+      display: block;
+      padding: 20px;
+      background-color: #2fb8a6; /* エメラルドグリーンのボタン */
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 12px;
+      transition: background-color 0.2s, transform 0.2s;
+    }
+
+    a.symptom-button:hover {
+      background-color: #27a293;
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>メンタルの不調</h1>
+  <p>当てはまる症状を選んでください</p>
+
+  <div class="button-container">
+    <a class="symptom-button" href="result_irritation.html">イライラ</a>
+    <a class="symptom-button" href="result_anxiety.html">不安感</a>
+    <a class="symptom-button" href="result_sleep.html">眠りが浅い</a>
+    <a class="symptom-button" href="result_depression.html">気分の落ち込み</a>
+  </div>
+
+</body>
+</html>
